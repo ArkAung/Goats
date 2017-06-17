@@ -316,5 +316,5 @@ MelanomaDoctor.prototype.checkSetup = function () {
 };
 
 window.onload = function () {
-    window.MelanomaDoctor = new MelanomaDoctor();
+    window.melanomaDoctor = new MelanomaDoctor();
 };

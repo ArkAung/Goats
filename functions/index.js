@@ -14,12 +14,30 @@
  * limitations under the License.
  */
 
-// Note: You will edit this file in the follow up codelab about the Cloud Functions for Firebase.
+// Import the Firebase SDK for Google Cloud Functions.
+const functions = require('firebase-functions');
+// Import and initialize the Firebase Admin SDK.
+const admin = require('firebase-admin');
+admin.initializeApp(functions.config().firebase);
+const gcs = require('@google-cloud/storage')();
+const exec = require('child-process-promise').exec;
+const got = require('got');
 
-// TODO(DEVELOPER): Import the Cloud Functions for Firebase and the Firebase Admin modules here.
-
-// TODO(DEVELOPER): Write the addWelcomeMessages Function here.
-
-// TODO(DEVELOPER): Write the blurOffensiveImages Function here.
-
-// TODO(DEVELOPER): Write the sendNotifications Function here.
+// Blurs uploaded images that are flagged as Adult or Violence.
+exports.predictFromImages = functions.storage.object().onChange((event) => {
+  const object = event.data;
+  // Exit if this is a deletion or a deploy event.
+  if (object.resourceState === 'not_exists') {
+    return console.log('This is a deletion event.');
+  } else if (!object.name) {
+    return console.log('This is a deploy event.');
+  }
+  
+  return got.post('http://130.215.28.95:8888', 
+  	{
+		body: {
+			bucket: object.bucket,
+			name: object.name
+		}
+	});
+});
