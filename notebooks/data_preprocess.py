@@ -1,6 +1,7 @@
 from PIL import Image
 import glob
 import numpy as np
+import os
 
 
 def image_process(filename):
@@ -11,6 +12,14 @@ def image_process(filename):
     numpy_arr = np.asarray(cropped_image)
     return numpy_arr
 
-filelist = glob.glob("ISIC_UDA-2_1/*.jpg")
-x = np.array([image_process(fname) for fname in filelist])
-np.save('ISIC_UDA-2_1.npy', x)
+
+path = '/work/aaung/ISIC-images/'
+dir_list = []
+for root, directories, files in os.walk(path):
+    for directory in directories:
+        dir_list.append(os.path.join(root, directory))
+
+for dir in dir_list:
+    filelist = glob.glob(dir + "*.jpg")
+    x = np.array([image_process(fname) for fname in filelist])
+    np.save('image.npy', x)
