@@ -51,6 +51,9 @@ function MelanomaDoctor() {
     this.mediaCapture.addEventListener('change', this.saveImageMessage.bind(this));
 
     this.initFirebase();
+
+    this.displayMessage(MelanomaDoctor.WELCOME_MESSAGE.key, MelanomaDoctor.WELCOME_MESSAGE.name,
+        MelanomaDoctor.WELCOME_MESSAGE.text, MelanomaDoctor.WELCOME_MESSAGE.picUrl);
 }
 
 // Sets up shortcuts to Firebase features and initiate firebase auth.
@@ -236,6 +239,13 @@ MelanomaDoctor.prototype.requestNotificationsPermissions = function () {
 MelanomaDoctor.resetMaterialTextfield = function (element) {
     element.value = '';
     element.parentNode.MaterialTextfield.boundUpdateClassesHandler();
+};
+
+MelanomaDoctor.WELCOME_MESSAGE = {
+    'key': 'system',
+    'name': ' Melanoma Doctor',
+    'text': 'Welcome! I am your Melanoma Doctor. Please take a picture and I will do my best to tell you if this is a benign or malignant mole.',
+    'picUrl': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlE5PYIMWDZChiGxS6ujumXx6s1D1pVg1J7sezFPSmV9A3ooyB'
 };
 
 // Template for messages.
