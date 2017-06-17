@@ -1,0 +1,77 @@
+[I 14:26:34.959 NotebookApp] Serving notebooks from local directory: /work/aaung/Goats/models
+[I 14:26:34.960 NotebookApp] 0 active kernels 
+[I 14:26:34.960 NotebookApp] The Jupyter Notebook is running at: http://10.185.0.12:8478/?token=1b6e4c4e09653261650e272ba8853affac43f546de4c2a46
+[I 14:26:34.960 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:26:34.963 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://10.185.0.12:8478/?token=1b6e4c4e09653261650e272ba8853affac43f546de4c2a46
+[I 14:28:00.948 NotebookApp] 302 GET / (10.185.255.254) 0.64ms
+[I 14:28:00.964 NotebookApp] 302 GET /tree? (10.185.255.254) 1.72ms
+[I 14:28:12.315 NotebookApp] 302 POST /login?next=%2Ftree%3F (10.185.255.254) 1.89ms
+[I 14:28:35.169 NotebookApp] Kernel started: 45d51125-2b54-4baf-9894-55ebd2a44d7e
+[I 14:30:35.144 NotebookApp] Saving file at /Model.ipynb
+[I 14:30:49.418 NotebookApp] Saving file at /Model.ipynb
+[I 14:31:08.647 NotebookApp] Saving file at /Model.ipynb
+[I 14:31:12.857 NotebookApp] Saving file at /Model.ipynb
+[I 14:32:35.142 NotebookApp] Saving file at /Model.ipynb
+[I 14:34:35.185 NotebookApp] Saving file at /Model.ipynb
+[I 14:36:35.654 NotebookApp] Saving file at /Model.ipynb
+[I 14:37:14.385 NotebookApp] Saving file at /Model.ipynb
+[I 14:38:35.125 NotebookApp] Saving file at /Model.ipynb
+[I 14:40:30.149 NotebookApp] Saving file at /Model.ipynb
+[I 14:40:44.373 NotebookApp] Saving file at /Model.ipynb
+[I 14:41:00.685 NotebookApp] Saving file at /Model.ipynb
+2017-06-17 14:42:00.696199: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-17 14:42:00.696449: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-17 14:42:00.696462: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-17 14:42:00.961703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K20Xm
+major: 3 minor: 5 memoryClockRate (GHz) 0.732
+pciBusID 0000:03:00.0
+Total memory: 5.57GiB
+Free memory: 5.50GiB
+2017-06-17 14:42:00.961746: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-06-17 14:42:00.961756: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-06-17 14:42:00.961772: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K20Xm, pci bus id: 0000:03:00.0)
+[I 14:42:21.583 NotebookApp] Saving file at /Model.ipynb
+[I 14:42:36.321 NotebookApp] Saving file at /Model.ipynb
+[I 14:44:14.982 NotebookApp] Saving file at /Model.ipynb
+[I 14:44:35.109 NotebookApp] Saving file at /Model.ipynb
+[I 14:44:46.645 NotebookApp] Saving file at /Model.ipynb
+[I 14:46:35.275 NotebookApp] Saving file at /Model.ipynb
+[I 14:48:35.129 NotebookApp] Saving file at /Model.ipynb
+[I 14:50:35.126 NotebookApp] Saving file at /Model.ipynb
+[I 14:52:35.121 NotebookApp] Saving file at /Model.ipynb
+[I 14:54:36.119 NotebookApp] Saving file at /Model.ipynb
+[I 14:56:35.124 NotebookApp] Saving file at /Model.ipynb
+[I 14:57:48.466 NotebookApp] Saving file at /Model.ipynb
+[I 14:57:49.831 NotebookApp] Saving file at /Model.ipynb
+[I 14:58:35.110 NotebookApp] Saving file at /Model.ipynb
+[I 15:00:10.712 NotebookApp] Saving file at /Model.ipynb
+[I 15:00:16.921 NotebookApp] Saving file at /Model.ipynb
+[I 15:00:24.131 NotebookApp] Saving file at /Model.ipynb
+[I 15:00:26.685 NotebookApp] Saving file at /Model.ipynb
+[I 15:00:30.132 NotebookApp] Kernel restarted: 45d51125-2b54-4baf-9894-55ebd2a44d7e
+[I 15:00:35.072 NotebookApp] Saving file at /Model.ipynb
+[I 15:01:17.611 NotebookApp] Kernel restarted: 45d51125-2b54-4baf-9894-55ebd2a44d7e
+2017-06-17 15:01:26.946709: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-17 15:01:26.946948: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-17 15:01:26.946962: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-17 15:01:27.179604: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K20Xm
+major: 3 minor: 5 memoryClockRate (GHz) 0.732
+pciBusID 0000:03:00.0
+Total memory: 5.57GiB
+Free memory: 5.50GiB
+2017-06-17 15:01:27.179646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-06-17 15:01:27.179656: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-06-17 15:01:27.179672: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K20Xm, pci bus id: 0000:03:00.0)
+[I 15:02:35.140 NotebookApp] Saving file at /Model.ipynb
+[I 15:04:35.087 NotebookApp] Saving file at /Model.ipynb
+[I 15:06:35.073 NotebookApp] Saving file at /Model.ipynb
+[I 15:08:35.074 NotebookApp] Saving file at /Model.ipynb
+[I 15:10:35.080 NotebookApp] Saving file at /Model.ipynb
+[I 15:10:48.393 NotebookApp] Saving file at /Model.ipynb
+[I 15:10:50.251 NotebookApp] Saving file at /Model.ipynb

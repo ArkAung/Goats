@@ -1,0 +1,11 @@
+
+
+  Paste ssh command in a terminal on local host (i.e., laptop)
+  ------------------------------------------------------------
+  ssh -N -L 8478:10.185.0.12:8478 aaung@turing
+
+  Open this address in a browser on local host; see token below
+  ------------------------------------------------------------
+  localhost:8478                                      
+
+
