@@ -9,6 +9,18 @@ from firebase_admin import credentials
 cred = credentials.Certificate('/home/test/key.json')
 default_app = firebase_admin.initialize_app(cred)
 
+def download_blob(bucket_name, source_blob_name, destination_file_name):
+    """Downloads a blob from the bucket."""
+    storage_client = storage.Client()
+    bucket = storage_client.get_bucket(bucket_name)
+    blob = bucket.blob(source_blob_name)
+
+    blob.download_to_filename(destination_file_name)
+
+    print('Blob {} downloaded to {}.'.format(
+        source_blob_name,
+        destination_file_name))
+
 def predict(model, input_image):
     predictions = model.predict(input_image)
     return predictions
@@ -22,15 +34,17 @@ def image_process(filename):
     return numpy_arr
 
 input_file = sys.argv[1]
-model = load_model('melanoma.h5')
+model = load_model('melanoma_100epochs.h5')
 image = image_process(input_file)
 image = np.reshape(image, (1,image.shape[0], image.shape[1], image.shape[2]))
 prediction = predict(model, image)
+print prediction
 percentage = np.max(prediction) * 100
 pred_class = np.argmax(prediction)
+print pred_class
 if pred_class == 0:
     output_string = "Benign"
 else:
     output_string = "Malignant"
-    
+
 print "From the looks of this patch of skin, it is {} with confidence {}%".format(output_string,percentage)
